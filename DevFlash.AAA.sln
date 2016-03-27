@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFlash.AAA", "DevFlash.AAA\DevFlash.AAA.csproj", "{0B64BC21-BBAA-42B9-A249-A55C08CFF0F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFlash.AAA.Tests", "DevFlash.AAA.Tests\DevFlash.AAA.Tests.csproj", "{A350AF3C-8E38-43EE-9BBD-2BD57750930F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0B64BC21-BBAA-42B9-A249-A55C08CFF0F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B64BC21-BBAA-42B9-A249-A55C08CFF0F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B64BC21-BBAA-42B9-A249-A55C08CFF0F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A350AF3C-8E38-43EE-9BBD-2BD57750930F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A350AF3C-8E38-43EE-9BBD-2BD57750930F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A350AF3C-8E38-43EE-9BBD-2BD57750930F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A350AF3C-8E38-43EE-9BBD-2BD57750930F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
