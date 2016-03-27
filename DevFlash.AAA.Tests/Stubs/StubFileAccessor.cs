@@ -1,4 +1,6 @@
-﻿using DevFlash.AAA.Interfaces;
+﻿using System.Collections.Generic;
+
+using DevFlash.AAA.Interfaces;
 
 namespace DevFlash.AAA.Tests.Stubs
 {
@@ -8,28 +10,43 @@ namespace DevFlash.AAA.Tests.Stubs
 
         public string ReadResult { get; set; }
 
-        public string DeletedPath { get; private set; }
+        public bool CreatedFile { get; private set; }
 
-        public string RenamedPath { get; private set; }
+        public string CreatedFilePath { get; private set; }
+
+        public List<string> TextsWrittenToFile { get; private set; }
+
+        public bool ClosedFile { get; private set; }
+
+        public StubFileAccessor()
+        {
+            this.TextsWrittenToFile = new List<string>();
+        }
 
         public bool Exists(string path)
         {
             return ExistsResult;
         }
 
+        public void CreateFile(string path)
+        {
+            this.CreatedFilePath = path;
+            this.CreatedFile = true;
+        }
+
+        public void WriteToFile(string path, string text)
+        {
+            this.TextsWrittenToFile.Add(text);
+        }
+
+        public void CloseFile(string path)
+        {
+            this.ClosedFile = true;
+        }
+
         public string Read(string path)
         {
             return ReadResult;
-        }
-
-        public void Delete(string path)
-        {
-            this.DeletedPath = path;
-        }
-
-        public void Rename(string path, string newName)
-        {
-            this.RenamedPath = path;
         }
     }
 }

@@ -4,10 +4,10 @@
     {
         bool Exists(string path);
 
-        string Read(string path);
+        void CreateFile(string path);
 
-        void Delete(string path);
+        void WriteToFile(string path, string text);
 
-        void Rename(string path, string newName);
+        void CloseFile(string path);
     }
 }

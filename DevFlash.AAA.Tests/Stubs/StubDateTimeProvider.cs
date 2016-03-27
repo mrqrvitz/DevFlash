@@ -6,22 +6,16 @@ namespace DevFlash.AAA.Tests.Stubs
 {
     public class StubDateTimeProvider : IDateTimeProvider
     {
-        private readonly TimeSpan incrementationSpan;
+        public DateTime CurrentTime { get; private set; }
 
-        private DateTime currentTime;
-
-        public StubDateTimeProvider(DateTime startTime, TimeSpan incrementationSpan)
+        public StubDateTimeProvider(DateTime startTime)
         {
-            this.currentTime = startTime;
-            this.incrementationSpan = incrementationSpan;
+            this.CurrentTime = startTime;
         }
 
         public DateTime Now()
         {
-            var time = this.currentTime;
-            this.currentTime = this.currentTime.Add(incrementationSpan);
-
-            return time;
+            return this.CurrentTime;
         }
     }
 }
