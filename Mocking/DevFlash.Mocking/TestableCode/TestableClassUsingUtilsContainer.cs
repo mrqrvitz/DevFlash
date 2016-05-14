@@ -5,10 +5,11 @@ using DevFlash.Mocking.Repository;
 using DevFlash.Mocking.TestableCode.Config;
 using DevFlash.Mocking.TestableCode.DateAndTime;
 using DevFlash.Mocking.TestableCode.IO;
+using DevFlash.Mocking.TestableCode.Utilities;
 
 namespace DevFlash.Mocking.TestableCode
 {
-    public class TestableClass
+    public class TestableClassUsingUtilsContainer
     {
         private readonly IProductRepository productRepository;
 
@@ -17,14 +18,14 @@ namespace DevFlash.Mocking.TestableCode
         private readonly IFileWrapper fileWrapper;
         private readonly IPathWrapper pathWrapper;
 
-        public TestableClass(IProductRepository productRepository, IDateTimeProvider dateTimeProvider,
-            IConfigProvider configProvider, IFileWrapper fileWrapper, IPathWrapper pathWrapper)
+        public TestableClassUsingUtilsContainer(IProductRepository productRepository, IUtils utils)
         {
             this.productRepository = productRepository;
-            this.dateTimeProvider = dateTimeProvider;
-            this.configProvider = configProvider;
-            this.fileWrapper = fileWrapper;
-            this.pathWrapper = pathWrapper;
+
+            this.dateTimeProvider = utils.DateTimeProvider;
+            this.configProvider = utils.ConfigProvider;
+            this.fileWrapper = utils.FileWrapper;
+            this.pathWrapper = utils.PathWrapper;
         }
 
         public void SaveProductsLog()

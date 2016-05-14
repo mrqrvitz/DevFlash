@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace DevFlash.Mocking.TestableCode.ConfigProvider
+namespace DevFlash.Mocking.TestableCode.Config
 {
     internal class ConfigProvider : IConfigProvider
     {

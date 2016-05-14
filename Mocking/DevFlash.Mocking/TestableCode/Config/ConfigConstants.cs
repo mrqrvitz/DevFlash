@@ -1,4 +1,4 @@
-﻿namespace DevFlash.Mocking.TestableCode.ConfigProvider
+﻿namespace DevFlash.Mocking.TestableCode.Config
 {
     internal static class ConfigConstants
     {

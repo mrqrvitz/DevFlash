@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DevFlash.Mocking.TestableCode.DateTimeProvider
+namespace DevFlash.Mocking.TestableCode.DateAndTime
 {
     public interface IDateTimeProvider
     {

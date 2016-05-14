@@ -1,7 +1,7 @@
 ﻿using DevFlash.Mocking.Repository;
 using DevFlash.Mocking.TestableCode;
-using DevFlash.Mocking.TestableCode.ConfigProvider;
-using DevFlash.Mocking.TestableCode.DateTimeProvider;
+using DevFlash.Mocking.TestableCode.Config;
+using DevFlash.Mocking.TestableCode.DateAndTime;
 using DevFlash.Mocking.TestableCode.IO;
 
 namespace DevFlash.Mocking
