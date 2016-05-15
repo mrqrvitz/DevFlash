@@ -6,7 +6,7 @@ namespace DevFlash.Mocking.Tests.Mocking.Config
     {
         public string OutputFolderPath
         {
-            get { return "OutputFolderPath"; }
+            get { return "OutputFolderPath\\"; }
         }
     }
 }

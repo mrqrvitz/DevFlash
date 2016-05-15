@@ -58,6 +58,7 @@
     <Compile Include="TestableCode\IO\PathWrapper.cs" />
     <Compile Include="TestableCode\IO\StreamWriterWrapper.cs" />
     <Compile Include="TestableCode\TestableClass.cs" />
+    <Compile Include="TestableCode\TestableClassUsingDateTimeWrapper.cs" />
     <Compile Include="TestableCode\TestableClassUsingUtilsContainer.cs" />
     <Compile Include="TestableCode\Utilities\IUtils.cs" />
     <Compile Include="TestableCode\Utilities\Utils.cs" />

@@ -31,7 +31,7 @@ namespace DevFlash.Mocking.Tests.Mocking.IO
         public IStreamWriterWrapper CreateToRead(string path)
         {
             eventLogger.Log(Enums.EventType.FileCreate, path);
-            return new MockStreamWriterWrapper();
+            return new MockStreamWriterWrapperWithEventLog(eventLogger);
         }
     }
 }

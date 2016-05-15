@@ -33,6 +33,15 @@ namespace DevFlash.Mocking.Tests.Logging
                 expectedEventType, expectedParameter);
         }
 
+        public void OccurredTimes(Enums.EventType expectedEventType, int expectedOccurrences)
+        {
+            var occurrences = Events.Count(x => x.EventType == expectedEventType);
+
+            Assert.AreEqual(expectedOccurrences, occurrences,
+                "Expected event of type {0} to occur {1} times but it occurred {2} times.", expectedEventType,
+                expectedOccurrences, occurrences);
+        }
+
         public void DidNotOccur(Enums.EventType expectedEventType)
         {
             var occurred = Events.Any(x => x.EventType == expectedEventType);

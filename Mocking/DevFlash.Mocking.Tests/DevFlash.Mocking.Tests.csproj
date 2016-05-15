@@ -64,6 +64,7 @@
     <Compile Include="Mocking\Repository\MockProductRepository.cs" />
     <Compile Include="Mocking\Utilities\MockUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\EventOccurrencesTests.cs" />
     <Compile Include="Tests\TimeStampTests.cs" />
   </ItemGroup>
   <ItemGroup>
